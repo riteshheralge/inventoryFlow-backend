@@ -10,8 +10,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-            git branch: 'main',
-                git 'https://github.com/riteshheralge/inventoryFlow-backend.git'
+                git branch: 'main', url: 'https://github.com/riteshheralge/inventoryFlow-backend.git'
             }
         }
 
